@@ -41,9 +41,8 @@
     <!-- Navbar -->
     <!-- Add class ".header-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: ".header-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which header collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
     <header class="site-header header-sticky">
-        <div class="navbar">
+        <div id="rsm-page-nav-bar" class="navbar">
             <div class="inner">
-
                 <!-- Site Logo -->
                 <a href="index.html" class="site-logo">
                     <img src="img/logo.png" alt="Redstone">
@@ -54,7 +53,7 @@
                     <!-- Alignment classes: pull-right, pull-left. -->
                     <div class="toolbox pull-right">
                         <div class="inner">
-                            <a href="/app" class="btn btn-floating btn-primary waves-effect waves-light">RSM App</a>
+                            <a href="/app" class="btn btn-floating btn-primary waves-effect waves-light">RSMint</a>
                         </div>
                     </div>
 
@@ -71,7 +70,7 @@
                             </ul>
                         </li>
                         -->
-                        <li><a href="#">AIMS</a></li>
+                        <li><a href="/aims">AIMS</a></li>
                         <li><a href="https://app.allocadence.com/v3/login" target="_blank">Inventory</a></li>
                         <li><a href="/dmv">DMV</a></li>
                         <li><a href="/picks">Pick Tickets</a></li>
@@ -85,9 +84,9 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </div><!-- .inner -->
-        </div><!-- .navbar -->
-    </header><!-- .site-header -->
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Carousel -->
     <section class="container-wide" style="margin-top: -48px;">
@@ -99,7 +98,6 @@
          -->
         <div class="hero-carousel" data-loop="true">
             <div class="inner">
-
                 <!-- slide 1 -->
                 <div class="slide" style="background-image: url(img/home/hero-carousel/01.jpg);">
                     <div class="slide-content">
@@ -141,7 +139,7 @@
                 </div>
             </div><!-- .inner -->
         </div><!-- .hero-carousel -->
-    </section><!-- .container-wide -->
+    </section>
 
     <!-- About Section -->
     <section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #f3f3f3;">
@@ -151,9 +149,11 @@
                 <i class="material-icons nature_people"></i>About Data Processing
             </h2>
 
-            <h3 class="block-subtitle">
+            <h3 id="rsm-team-data-processing" class="block-subtitle">
                 <i class="material-icons trending_flat"></i>Our people
             </h3>
+
+            <!-- Row 1 - data processing team -->
             <div class="row padding-bottom">
                 <!-- Richard Charlow -->
                 <div class="col-sm-4">
@@ -242,6 +242,98 @@
                 </div>
             </div>
 
+            <br>
+
+            <!-- Row 2 - data processing team -->
+            <div class="row padding-bottom">
+                <!-- Michael Hemphill -->
+                <div class="col-sm-4">
+                    <div class="team-tile">
+                        <div class="info">
+                            <h3>Michael Hemphill</h3>
+                            <h4>Data Architect</h4>
+                        </div>
+                        <img src="img/team/04.jpg" alt="Team">
+
+                        <!-- on hover links
+                        <div class="social-bar-circle text-right">
+                            <a href="#" class="sb-skype waves-effect waves-light" data-toggle="tooltip"
+                               data-placement="top" title="Skype">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                            <a href="#" class="sb-facebook waves-effect waves-light waves-effect waves-light"
+                               data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="sb-google-plus waves-effect waves-light" data-toggle="tooltip"
+                               data-placement="top" title="Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+
+                <!-- Ray Pruitt -->
+                <div class="col-sm-4">
+                    <div class="team-tile">
+                        <div class="info">
+                            <h3>Ray Pruitt</h3>
+                            <h4>Client Automation Specialist</h4>
+                        </div>
+
+                        <img src="img/team/05.jpg" alt="Team">
+
+                        <!-- on hover links
+                        <div class="social-bar-circle text-right">
+                            <a href="#" class="sb-link waves-effect waves-light" data-toggle="tooltip"
+                               data-placement="top" title="Link">
+                                <i class="fa fa-link"></i>
+                            </a>
+                            <a href="#" class="sb-twitter waves-effect waves-light waves-effect waves-light"
+                               data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="sb-behance waves-effect waves-light" data-toggle="tooltip"
+                               data-placement="top" title="Behance">
+                                <i class="fa fa-behance"></i>
+                            </a>
+                        </div>
+                        -->
+                    </div>
+
+                </div>
+
+                <!-- Rudy -->
+                <div class="col-sm-4">
+                    <div class="team-tile">
+                        <div class="info">
+                            <h3>Rudy</h3>
+                            <h4>Junior Data Processor</h4>
+                        </div>
+
+                        <img src="img/team/06.jpg" alt="Team">
+
+                        <!-- on hover links
+                        <div class="social-bar-circle text-right">
+                            <a href="#" class="sb-skype waves-effect waves-light" data-toggle="tooltip"
+                               data-placement="top" title="Skype">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                            <a href="#" class="sb-linkedin waves-effect waves-light" data-toggle="tooltip"
+                               data-placement="top" title="LinkedIn">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="sb-stackoverflow waves-effect waves-light waves-effect waves-light"
+                               data-toggle="tooltip" data-placement="top" title="Stack Overflow">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                            -->
+                    </div>
+                </div>
+            </div>
+
+
             <h3 class="block-subtitle">
                 <i class="material-icons trending_flat"></i>Past &amp; Present
             </h3>
@@ -305,10 +397,12 @@
         <!-- Bottom Footer / Copyright -->
         <div class="copyright">
             <div class="container">
-                <div class="inner">
+                <div class="inner text-center">
                     <div class="column">
                         <p>Made with <i class="fa fa-heart"></i> by Redstone Print & Mail INC. &copy; 2019 </p>
                     </div>
+
+                    <!-- social icon links
                     <div class="column text-right mobile-center">
                         <div class="social-bar">
                             <a href="#" class="sb-steam" data-toggle="tooltip" data-placement="top" title="Steam">
@@ -325,6 +419,7 @@
                             </a>
                         </div>
                     </div>
+                    -->
                 </div>
             </div><!-- .container -->
         </div><!-- .copyright -->
